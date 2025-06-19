@@ -10,61 +10,82 @@
 </head>
 <body>
   
-    <nav class="navbar navbar-light bg-light boton" >
- <div class="container-fluid" >
-    <i class="fa-brands fa-instagram" class="icono">  Instagram</i>
-    
-    <form class="d-flex">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Create a New Post
-</button>&nbsp;
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe aquí..."></textarea>
-        <button type="button" class="btn btn-outline-secondary"><span><i class="fa-solid fa-camera"></i></span></button>
-        <button type="button" class="btn btn-outline-secondary"><span><i class="fa-solid fa-location-dot"></i></span></button>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Publish</button>
-      </div>
-    </div>
-  </div>
-</div>
-     
-      <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-    <span><i class="fa-solid fa-gear"></i></span>
-  </button>
-  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
-    <li><a class="dropdown-item active" href="#">Profile</a></li>
-    <li><a class="dropdown-item" href="#">Accesibility</a></li>
-    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
-  </ul>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light boton">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
 
-    </form>
-  </div>
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenedor que colapsa -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContenido">
+      <!-- Botón de nuevo post -->
+      <div class="d-flex"> 
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Create a New Post </button>&nbsp; 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+          <div class="modal-dialog"> 
+            <div class="modal-content"> 
+              <div class="modal-header"> 
+                <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+              </div> 
+              <div class="modal-body"> 
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe aquí..."></textarea> 
+                <button type="button" class="btn btn-outline-secondary">
+                  <span>
+                    <i class="fa-solid fa-camera"></i>
+                  </span>
+                </button> 
+                <button type="button" class="btn btn-outline-secondary">
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                </button> 
+              </div> 
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                <button type="button" class="btn btn-primary">Publish</button> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="dropdown"> 
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"> 
+            <span><i class="fa-solid fa-gear"></i>
+            </span> 
+          </button> 
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2"> 
+            <li><a class="dropdown-item active" href="#">Profile</a></li> 
+            <li><a class="dropdown-item" href="#">Accesibility</a></li> 
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li> 
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>
 </nav>
 
 <nav class="d-flex justify-content-center">
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table"></i></button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
-    
-  </div>
+  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table"></i></button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+  </ul>
 </nav>
+
+
 <div class="tab-content container-fluid" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+  
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
     <div class="row">
       <div class="col-md-4 mt-4">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvan0RLm2yeGMD91Ztt2Nd72XEYecWeYt4ug&s" class="object-fit-cover" alt="puente">
@@ -72,10 +93,10 @@
       <div class="col-md-4 mt-4">
         <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGs7sZtQsHV4lj2P_nSQEQM5IPk1w076V26A&s" class="object-fit-cover" alt="">
       </div>
-    <div class="col-md-4 mt-4">
+      <div class="col-md-4 mt-4">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXYGhq1PxuK6JQMVi9CEJeQFeGOklDI5wAA&s" class="object-fit-cover" alt="ciudad">
-    </div>
       </div>
+   </div>
     <div class="row">
       <div class="col-md-4 mt-4">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHGRo5O8M46Cw4Eb2QgdU2lGWdLr4ZyZcHUg&s" class="object-fit-cover" alt="cartel">
@@ -99,7 +120,8 @@
       </div>
     </div>
   </div>
-  <div class="tab-pane fade d-flex justify-content-center flex-column align-items-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+  <div class="tab-pane fade d-flex justify-content-center flex-column align-items-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
         
     <div class="card border-secundary mb-3" style="max-width: 18rem;">
   <div class="card-header bg-transparent border-success d-flex justify-content-between">

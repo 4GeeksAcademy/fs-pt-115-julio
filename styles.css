@@ -1,5 +1,6 @@
 .object-fit-cover {
   width: 100%;
-  height: 100%; /* Puedes ajustar esta altura según tu diseño */
+  height: 100%;
   object-fit: cover;
+  display: block;
   }
